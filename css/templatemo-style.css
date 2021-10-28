@@ -253,6 +253,20 @@ button:focus { outline: none; }
 	font-weight: 400;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 50%;*/
+}
+
+.resize {
+	margin-top: 20px;
+	object-fit: cover;
+	width: 20%;
+	height: auto;
+}
+
 /*.tm-footer .tm-text {*/
 /*	font-size: 1em;*/
 /*	line-height: 1.8;*/
@@ -584,9 +598,24 @@ figure.effect-sadie:hover p {
 
 /* Media Queries */
 
+@media only screen and (min-width: 360px) {
+	.resize {
+		margin-top: 20px;
+		object-fit: cover;
+		width: 60%;
+		height: auto;
+	}
+}
+
 @media only screen and (min-width: 400px) {
 	.cd-hero-slider h2 { font-size: 1.4em; }
 	.grid-item figure figcaption { padding: 2em; }
+	.resize {
+		margin-top: 20px;
+		object-fit: cover;
+		width: 60%;
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 480px) {
@@ -594,12 +623,18 @@ figure.effect-sadie:hover p {
 	.tm-textbox-padding { padding: 30px 40px; }
 	.tm-textbox-padding-contact { padding: 30px; }
 	.grid-item { width: 50%; }
-	.grid-item figure figcaption { padding: 1.5em; }	
+	.grid-item figure figcaption { padding: 1.5em; }
 }
 
 @media only screen and (min-width: 600px) {
 	.tm-footer { padding: 50px 0px 0px 0px; }
 	.tm-copyright-text { width: auto; }
+	.resize {
+		margin-top: 20px;
+		object-fit: cover;
+		width: 40%;
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 720px) {	
@@ -609,6 +644,12 @@ figure.effect-sadie:hover p {
 	}
 
 	.tm-copyright-text { margin-top: 0; }
+	.resize {
+		margin-top: 20px;
+		object-fit: cover;
+		width: 40%;
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -629,6 +670,12 @@ figure.effect-sadie:hover p {
 }
 
 @media only screen and (min-width: 992px) {
+	.resize {
+		margin-top: 20px;
+		object-fit: cover;
+		width: 20%;
+		height: auto;
+	}
 	.tm-navbar-bg { 
 		padding-left: 25px; 
 		padding-right: 0;
